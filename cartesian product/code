@@ -1,0 +1,15 @@
+from itertools import product
+
+# Read the input lists
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+# Compute the cartesian product
+cartesian_product = list(product(A, B))
+
+# Sort the tuples in ascending order
+sorted_product = sorted(cartesian_product)
+
+# Print the sorted tuples
+for item in sorted_product:
+    print(item, end=' ')
