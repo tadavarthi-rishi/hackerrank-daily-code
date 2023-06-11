@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+
+# Read the input string and integer value
+string, k = input().split()
+
+# Generate permutations
+perms = list(permutations(sorted(string), int(k)))
+
+# Print permutations
+for perm in perms:
+    print(''.join(perm))
