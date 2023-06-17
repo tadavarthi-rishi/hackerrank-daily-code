@@ -1,0 +1,10 @@
+def average(array):
+    distinct_heights = set(array)  # Create a set of distinct heights
+    average_height = sum(distinct_heights) / len(distinct_heights)  # Calculate the average
+    return round(average_height, 3)  # Round the average to 3 decimal places
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
